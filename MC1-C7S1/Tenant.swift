@@ -13,45 +13,106 @@ struct Tenant: View{
         HStack (alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) {
             VStack (alignment: .leading) {
                 Text("Welcome to")
-                    .font(.custom("Poppins", fixedSize: 16))
-                    .fontWeight(.bold)
+                    .font(.system(size: 20))
+                    .foregroundStyle(Color.white)
+                    .bold()
                 Text("GOP 9 Green Eatery")
-                    .font(.custom("Poppins", fixedSize: 18))
-                    .fontWeight(.bold)
+                    .font(.system(size: 27))
+                    .foregroundStyle(Color.white)
+                    .bold()
             }.padding([.trailing], 90)
-            Image("Logo")
-                .resizable()
-                .clipShape(Circle())
-                .frame(width: 80, height: 80)
-                .padding([.trailing], 15)
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
         .background {
-            Color.gray.opacity(0.3)
-                .ignoresSafeArea()
-        }.padding([.bottom],100)
+            Image("background")
+                .scaledToFit()
+        }.padding([.top], 80)
         
-        NavigationStack{}
-            .searchable(text: $searchText, prompt: "Find tenant or food")
-        
-        
-        VStack{
-            Text("Deals")
-            Rectangle()
-            
+        ZStack{
+            SearchBar()
+                .padding([.bottom], 625)
+                .frame(width: 380)
             VStack{
-                HStack{
-                    Text("Tenant List")
-                    Text("Tenant Map")
-                }
-                HStack{
-                    Rectangle()
-                    Rectangle()
-                }
-                HStack{
-                    Rectangle()
-                    Rectangle()
-                }
-            }
-        }
+                Image("Deal")
+                
+                VStack{
+                    HStack{
+                        Text("Tenant List")
+                        Text("Tenant Map")
+                    }.padding([.bottom], 20)
+                    HStack{
+                        VStack(alignment: .leading){
+                            Image("Kasturi")
+                            HStack{
+                                Text("Kasturi")
+                                    .font(/*@START_MENU_TOKEN@*/.body/*@END_MENU_TOKEN@*/)
+                                    .padding([.trailing], 35)
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(Color.yellow)
+                                    .font(.footnote)
+                                Text("4.2 / 5")
+                                    .font(/*@START_MENU_TOKEN@*/.footnote/*@END_MENU_TOKEN@*/)
+                                    .padding([.leading], -5)
+                            }
+                            Text("7 - 12 min")
+                                .font(/*@START_MENU_TOKEN@*/.caption2/*@END_MENU_TOKEN@*/)
+                                .foregroundStyle(Color(red: 0.570, green: 0.570, blue: 0.570))
+                        }.padding([.trailing], 10)
+                        VStack(alignment: .leading){
+                            Image("Dapoer")
+                            HStack{
+                                Text("Ahza Snack")
+                                    .font(/*@START_MENU_TOKEN@*/.body/*@END_MENU_TOKEN@*/)
+
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(Color.yellow)
+                                    .font(.footnote)
+                                Text("4.2 / 5")
+                                    .font(/*@START_MENU_TOKEN@*/.footnote/*@END_MENU_TOKEN@*/)
+                                    .padding([.leading], -5)
+                            }
+                            Text("5 - 10 min")
+                                .font(/*@START_MENU_TOKEN@*/.caption2/*@END_MENU_TOKEN@*/)
+                                .foregroundStyle(Color(red: 0.570, green: 0.570, blue: 0.570))
+                        }
+                    }
+                    HStack{
+                        VStack(alignment: .leading){
+                            Image("Wong")
+                            HStack{
+                                Text("Wong Jowo")
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(Color.yellow)
+                                    .font(.footnote)
+                                Text("4.2 / 5")
+                                    .font(/*@START_MENU_TOKEN@*/.footnote/*@END_MENU_TOKEN@*/)
+                                    .padding([.leading], -5)
+                            }
+                            Text("7 - 12 min")
+                                .font(/*@START_MENU_TOKEN@*/.caption2/*@END_MENU_TOKEN@*/)
+                                .foregroundStyle(Color(red: 0.570, green: 0.570, blue: 0.570))
+                        }.padding([.trailing], 10)
+                        VStack(alignment: .leading){
+                            Image("Lading")
+                            HStack{
+                                Text("La Ding")
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(Color.yellow)
+                                    .font(.footnote)
+                                Text("4.2 / 5")
+                                    .font(/*@START_MENU_TOKEN@*/.footnote/*@END_MENU_TOKEN@*/)
+                                    .padding([.leading], -5)
+                            }
+                            Text("5 - 10 min")
+                                .font(/*@START_MENU_TOKEN@*/.caption2/*@END_MENU_TOKEN@*/)
+                                .foregroundStyle(Color(red: 0.570, green: 0.570, blue: 0.570))
+                        }
+                    }
+                }.padding([.top], 20)
+            }.padding([.top], 100)
+        }.padding([.top], 50)
     }
+}
+
+#Preview {
+    Tenant()
 }
