@@ -55,3 +55,8 @@ struct Tenant: View{
         }
     }
 }
+
+#Preview {
+    Tenant()
+}
+

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		292244DD2BB52B0B003EFACE /* Tenant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292244DC2BB52B0B003EFACE /* Tenant.swift */; };
 		9BEF20182BBBC3B000BE824F /* MenuDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF20172BBBC3B000BE824F /* MenuDetail.swift */; };
+		9BEF201A2BBBDB1B00BE824F /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF20192BBBDB1B00BE824F /* Cart.swift */; };
 		ACC3D3D32BA9E09D0031D5A5 /* MC1_C7S1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3D3D22BA9E09D0031D5A5 /* MC1_C7S1App.swift */; };
 		ACC3D3D52BA9E09D0031D5A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3D3D42BA9E09D0031D5A5 /* ContentView.swift */; };
 		ACC3D3D72BA9E09D0031D5A5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3D3D62BA9E09D0031D5A5 /* Item.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		292244DC2BB52B0B003EFACE /* Tenant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tenant.swift; sourceTree = "<group>"; };
 		9BEF20172BBBC3B000BE824F /* MenuDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetail.swift; sourceTree = "<group>"; };
+		9BEF20192BBBDB1B00BE824F /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		ACC3D3CF2BA9E09D0031D5A5 /* MC1-C7S1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC1-C7S1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC3D3D22BA9E09D0031D5A5 /* MC1_C7S1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1_C7S1App.swift; sourceTree = "<group>"; };
 		ACC3D3D42BA9E09D0031D5A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				292244DC2BB52B0B003EFACE /* Tenant.swift */,
 				ACC3D3D62BA9E09D0031D5A5 /* Item.swift */,
 				9BEF20172BBBC3B000BE824F /* MenuDetail.swift */,
+				9BEF20192BBBDB1B00BE824F /* Cart.swift */,
 				ACC3D3D82BA9E09F0031D5A5 /* Assets.xcassets */,
 				ACC3D3DA2BA9E09F0031D5A5 /* Preview Content */,
 			);
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC3D3D52BA9E09D0031D5A5 /* ContentView.swift in Sources */,
+				9BEF201A2BBBDB1B00BE824F /* Cart.swift in Sources */,
 				292244DD2BB52B0B003EFACE /* Tenant.swift in Sources */,
 				ACC3D3D72BA9E09D0031D5A5 /* Item.swift in Sources */,
 				9BEF20182BBBC3B000BE824F /* MenuDetail.swift in Sources */,
