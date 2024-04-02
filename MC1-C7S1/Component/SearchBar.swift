@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SearchBar: View{
     @State var searchText = ""
+    
     var body: some View{
         HStack{
             Image(systemName: "magnifyingglass")
@@ -25,6 +26,7 @@ struct SearchBar: View{
                         .onTapGesture {
                              searchText = ""
                         }
+//                        .searchable(text: $searchText) Komen dlu karena belom search
                     ,alignment: .trailing
                 )
         }
