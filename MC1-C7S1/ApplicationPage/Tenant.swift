@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TenantPage: View{
+struct Tenant: View{
     
     
     var body: some View {
@@ -163,6 +163,6 @@ struct TenantPage: View{
 }
 
 #Preview {
-    TenantPage()
+    Tenant()
 }
 
