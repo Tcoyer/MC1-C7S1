@@ -43,7 +43,8 @@ struct Tenant: View{
                         HStack{
                             cardTenant(imageName: "Kasturi", name: "Kasturi", time: "7 - 12 min")
                                 .onTapGesture {
-                                    goTenant()
+                                    
+//                                    goTenant()
                                 }
                             cardTenant(imageName: "Dapoer", name: "Dapoer Cowek", time: "5 - 10 min")
                         }
