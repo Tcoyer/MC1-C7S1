@@ -26,7 +26,8 @@ struct SearchBar: View{
                         .onTapGesture {
                              searchText = ""
                         }
-//                        .searchable(text: $searchText) Komen dlu karena belom search
+                        .searchable(text: $searchText) 
+//                    Komen dlu karena belom search
                     ,alignment: .trailing
                 )
         }

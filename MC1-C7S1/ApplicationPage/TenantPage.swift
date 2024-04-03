@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Tenant: View{
+struct TenantPage: View{
     
     
     var body: some View {
@@ -41,28 +41,51 @@ struct Tenant: View{
                 .frame(width: 380)
             
             VStack{
-                Image("Deal")
+//                Image("Deal")
+//                
+                //Dynamic Carousel
+                // scrollview
                 
-                
-                VStack{
-                    HStack{
-                        Text("Tenant List")
-                        Text("Tenant Map")
-                        
-                    }.padding([.bottom], 20)
+                VStack(alignment: .leading){
                     
+                    Text("Tenant List").bold()
                     
-                    HStack{
-                        cardTenant()
-                        cardTenant()
+                    ScrollView{
+                        HStack{
+                            cardTenant()
+                            cardTenant()
+                            
+                        }
                         
+                        HStack{
+                            cardTenant()
+                            cardTenant()
+                            
+                        }
+                        HStack{
+                            cardTenant()
+                            cardTenant()
+                            
+                        }
+                        
+                        HStack{
+                            cardTenant()
+                            cardTenant()
+                            
+                        }
+                        HStack{
+                            cardTenant()
+                            cardTenant()
+                            
+                        }
+                        
+                        HStack{
+                            cardTenant()
+                            cardTenant()
+                            
+                        }
                     }
                     
-                    HStack{
-                        cardTenant()
-                        cardTenant()
-                        
-                    }
                     //                        //
                     //                        HStack{
                     //                            VStack(alignment: .leading){
@@ -140,6 +163,6 @@ struct Tenant: View{
 }
 
 #Preview {
-    Tenant()
+    TenantPage()
 }
 

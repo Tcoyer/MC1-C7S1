@@ -15,6 +15,7 @@ struct MenuDetail: View {
     
     @State var Counter : Int = 1
     @State var showErrorAlert : Bool = false
+
     
     var body: some View {
         VStack() {
