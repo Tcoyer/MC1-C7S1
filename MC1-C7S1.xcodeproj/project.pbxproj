@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		292244DD2BB52B0B003EFACE /* Tenant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292244DC2BB52B0B003EFACE /* Tenant.swift */; };
 		296E467A2BBBF2FE00FFE381 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E46792BBBF2FE00FFE381 /* SearchBar.swift */; };
+		296E467C2BBCF6BD00FFE381 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E467B2BBCF6BD00FFE381 /* Menu.swift */; };
 		9BEF20182BBBC3B000BE824F /* MenuDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF20172BBBC3B000BE824F /* MenuDetail.swift */; };
 		9BEF201A2BBBDB1B00BE824F /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF20192BBBDB1B00BE824F /* Cart.swift */; };
 		AC41E6352BBC4F5B00E77537 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41E6342BBC4F5B00E77537 /* data.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		292244DC2BB52B0B003EFACE /* Tenant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tenant.swift; sourceTree = "<group>"; };
 		296E46792BBBF2FE00FFE381 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		296E467B2BBCF6BD00FFE381 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		9BEF20172BBBC3B000BE824F /* MenuDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetail.swift; sourceTree = "<group>"; };
 		9BEF20192BBBDB1B00BE824F /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		AC41E6342BBC4F5B00E77537 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				296E46792BBBF2FE00FFE381 /* SearchBar.swift */,
 				9BEF20172BBBC3B000BE824F /* MenuDetail.swift */,
+				296E467B2BBCF6BD00FFE381 /* Menu.swift */,
 				AC41E63A2BBC6A3E00E77537 /* cardTenant.swift */,
 			);
 			path = Component;
@@ -306,6 +309,7 @@
 				ACC3D3D52BA9E09D0031D5A5 /* ContentView.swift in Sources */,
 				9BEF201A2BBBDB1B00BE824F /* Cart.swift in Sources */,
 				292244DD2BB52B0B003EFACE /* Tenant.swift in Sources */,
+				296E467C2BBCF6BD00FFE381 /* Menu.swift in Sources */,
 				ACC3D3D72BA9E09D0031D5A5 /* Item.swift in Sources */,
 				9BEF20182BBBC3B000BE824F /* MenuDetail.swift in Sources */,
 				AC41E63B2BBC6A3E00E77537 /* cardTenant.swift in Sources */,
